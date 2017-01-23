@@ -1,0 +1,25 @@
+{
+  "name": "Arjf/tdd-foobar",
+  "description": "TDD Starter Project",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Arjf",
+      "email": "info@arjf.co.uk"
+    }
+  ],
+  "require-dev": {
+    "phpunit/phpunit": "5.7.5"
+  },
+  "autoload-dev": {
+    "psr-4" : {
+      "Arjf\\Tests\\": "tests/src"
+    }
+  },
+  "autoload": {
+    "psr-4" : {
+      "Arjf\\" : "src"
+    }
+  }
+}

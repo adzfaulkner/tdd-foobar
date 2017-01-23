@@ -1,0 +1,22 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<phpunit colors="true" bootstrap="./vendor/autoload.php">
+    <testsuites>
+        <testsuite name="HelloWorld">
+            <directory>tests/src</directory>
+        </testsuite>
+    </testsuites>
+    <!-- Filter for coverage reports. -->
+    <filter>
+        <blacklist>
+            <directory>./vendor</directory>
+        </blacklist>
+        <whitelist>
+            <directory>./src</directory>
+        </whitelist>
+    </filter>
+    <!--
+    <logging>
+        <log type="coverage-clover" target="/tmp/coverage.xml"/>
+    </logging>
+    -->
+</phpunit>
